@@ -12,7 +12,17 @@ else
  end
 end
 
+
 def take_a_number(deli, name)
   deli<<name
 puts "Welcome, #{name}. You are number #{deli.length} in line."
+end
+
+def now_serving(deli)
+  if deli.empty?
+    puts "The line is empty."
+  else
+    puts "Currently serving#{deli.first}"
+    deli.first
+  end  
 end
